@@ -1,0 +1,8 @@
+<h1 class="text-center">Angular Leaftlet Maps</h1>
+
+<div class="map-container"
+  leaflet
+  [leafletOptions]="options"
+  (leafletMapReady)="onMapReady($event)"
+  (leafletClick)="mapClicked($event)">
+</div>
