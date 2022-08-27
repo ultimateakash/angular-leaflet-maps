@@ -73,7 +73,7 @@ export class AppComponent {
     return new Promise((resolve, reject) => {
         geocoder.reverse(
             { lat, lng },
-            this.options.zoom,
+            this.map.getZoom(),
             (results: any) => results.length ? resolve(results[0].name) : reject(null)
         );
     })
